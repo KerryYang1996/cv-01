@@ -7,7 +7,7 @@ body {
   font-size: large;
   background-color: chocolate;
 }
-#demo {
+#div1Wrapper {
   word-break: break-all;
 }
 #div1 {
@@ -45,5 +45,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 500px) {
+  #html {
+    width: 80%;
+    margin-left: 20px;
   }
 }
