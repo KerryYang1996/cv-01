@@ -1,1 +1,66 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"><title>杨英书的简历</title></head><body> <style id="style">*{padding:0;margin:0;box-sizing:border-box}body{font-size:large;background-color:#d2691e}#demo{word-break:break-all}#div1{position:fixed;top:20px;right:0}#div1:after,#div1:before{position:absolute;content:"";display:block}@media (max-width:500px){#html{height:50vh;overflow:auto}#div1Wrapper{height:50vh;position:relative}#div1{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}}</style> <div id="html"></div> <script src="main.4e4217b0.js"></script> <div id="div1Wrapper"> <div id="div1"></div> </div>  </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>杨英书的简历</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+  <script src="/style.e308ff8e.js"></script></head>
+  <body>
+    <style id="style"></style>
+    <div id="html"></div>
+    <script src="/main.1f19ae8e.js"></script>
+    <div id="div1Wrapper">
+      <div id="div1"></div>
+    </div>
+    <style>* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: large;
+        background-color: chocolate;
+      }
+      #demo {
+        word-break: break-all;
+      }
+      #div1 {
+        position: fixed;
+        top: 20px;
+        right: 0;
+        /*居中显示*/
+        /*
+        left：50%
+        transform：translateX(-50%);*/
+      }
+      #div1::before {
+        position: absolute;
+        content: "";
+        display: block;
+      }
+      #div1::after {
+        position: absolute;
+        content: "";
+        display: block;
+      }
+
+      /*媒体查询，宽度小于500px的执行media里面的程序*/
+      @media (max-width: 500px) {
+        #html {
+          height: 50vh;
+          overflow: auto;
+        }
+        #div1Wrapper {
+          height: 50vh;
+          position: relative;
+        }
+        #div1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }</style>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: large;
+  background-color: chocolate;
+}
+#demo {
+  word-break: break-all;
+}
+#div1 {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  /*居中显示*/
+  /*
+    left：50%
+    transform：translateX(-50%);*/
+}
+#div1::before {
+  position: absolute;
+  content: "";
+  display: block;
+}
+#div1::after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+
+/*媒体查询，宽度小于500px的执行media里面的程序*/
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+  #div1Wrapper {
+    height: 50vh;
+    position: relative;
+  }
+  #div1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
